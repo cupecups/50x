@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GTA V AP II INTENSE v2 By Rock4259 for FW 5.05</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet prefetch" href="exploit.css">
+</head>
+<body style="margin:0;"><br>
+<div>GTA V AP II INTENSE v2 By Rock4259</div>
+<script>
+function allset() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("allset").style.display = "block";
+}
+function awaitpl() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("awaiting").style.display = "block";
+}
+function fail(info) {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("fail").style.display = "block";
+}
+</script>
+<div id="loader" class="loader"></div>
+<div id="awaiting" class="info" style="display:none;">Waiting For Payload On Port 9020...</div>
+<div class="info" id="allset" style="display:none">E X P L O I T &nbsp; L O A D E D<br><div class="ib" style="margin:0; text-align:right;">P R E S S &nbsp;</div><div id="PSBUTTON"></div><div class="ib" style="margin:0; text-align:left;">&nbsp; T O &nbsp; E X I T</div></div>
+<div id="fail" class="info" style="display:none;">Something went wrong :(</div>
+<div id="badfw" class="info" style="display:none;">Only firmware 5.05 is supported!</div>
+<script>
+function getPayload(source,callback){var gp=document.createElement('script');gp.src=source;gp.onload=callback;gp.async=false;document.body.appendChild(gp);}
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript('exploit.js',function(){setTimeout(window.stage2,500);});}
+function getScriptTimeOut(){setTimeout(loadScript,500);}
+getPayload('gtaV_INTENSE.js',function(){getScriptTimeOut();});
+</script><pre id="console"></pre>
+</body>
+</html>
